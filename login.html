@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ENKOLAY ZKS Professional</title>
+
+    <link rel="stylesheet"
+          href="css/login.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="login-page">
+
+    <!--==================================
+        SOL PANEL
+    ===================================-->
+
+    <div class="login-left">
+
+        <img
+            src="assets/logo.png"
+            class="logo"
+            alt="ENKOLAY Logo">
+
+        <h1>
+
+            ENKOLAY
+
+        </h1>
+
+        <h2>
+
+            ZKS PROFESSIONAL
+
+        </h2>
+
+        <p>
+
+            Profesyonel Ziyaretçi Kayıt Sistemi
+
+        </p>
+
+        <div class="version">
+
+            Version 1.0.0
+
+        </div>
+
+    </div>
+
+    <!--==================================
+        SAĞ PANEL
+    ===================================-->
+
+    <div class="login-right">
+
+        <div class="login-card">
+
+            <h3>
+
+                Giriş Yap
+
+            </h3>
+
+            <span>
+
+                Kullanıcı bilgilerinizi giriniz.
+
+            </span>
+
+            <div class="form-group">
+
+                <label>
+
+                    Kullanıcı Adı
+
+                </label>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <input
+                        type="text"
+                        id="username"
+                        placeholder="Kullanıcı Adı">
+
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>
+
+                    Şifre
+
+                </label>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Şifre">
+
+                    <i
+                        id="togglePassword"
+                        class="fa-solid fa-eye password-toggle">
+
+                    </i>
+
+                </div>
+
+            </div>
+
+            <button id="loginButton">
+
+                GİRİŞ YAP
+
+            </button>
+
+            <div id="loginMessage"></div>
+            <!--==================================
+                DURUM KARTLARI
+            ===================================-->
+
+            <div class="login-status">
+
+                <div class="status-card">
+
+                    <small>
+
+                        Lisans
+
+                    </small>
+
+                    <strong class="online">
+
+                        Aktif
+
+                    </strong>
+
+                </div>
+
+                <div class="status-card">
+
+                    <small>
+
+                        SQLite
+
+                    </small>
+
+                    <strong class="online">
+
+                        Bağlı
+
+                    </strong>
+
+                </div>
+
+                <div class="status-card">
+
+                    <small>
+
+                        Saat
+
+                    </small>
+
+                    <strong id="clock">
+
+                        00:00:00
+
+                    </strong>
+
+                </div>
+
+                <div class="status-card">
+
+                    <small>
+
+                        Versiyon
+
+                    </small>
+
+                    <strong>
+
+                        V1.0.0
+
+                    </strong>
+
+                </div>
+
+            </div>
+
+            <!--==================================
+                FOOTER
+            ===================================-->
+
+            <div class="copyright">
+
+                © 2026 ENKOLAY Bilişim ve Güvenlik Sistemleri
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/login.js"></script>
+
+</body>
+
+</html>

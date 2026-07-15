@@ -1,0 +1,597 @@
+/*==================================================
+ENKOLAY ZKS PROFESSIONAL
+LOGIN.CSS
+PART 1
+==================================================*/
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:"Segoe UI",sans-serif;
+
+}
+
+html,
+body{
+
+    width:100%;
+
+    height:100%;
+
+}
+
+body{
+
+    overflow:hidden;
+
+    background:#07111f;
+
+    color:#ffffff;
+
+}
+
+/*==================================================
+LOGIN PAGE
+==================================================*/
+
+.login-page{
+
+    width:100%;
+
+    height:100vh;
+
+    display:grid;
+
+    grid-template-columns:42% 58%;
+
+    background:
+    radial-gradient(circle at top left,
+    rgba(0,183,255,.18),
+    transparent 40%),
+
+    radial-gradient(circle at bottom right,
+    rgba(0,80,255,.12),
+    transparent 35%),
+
+    linear-gradient(
+    135deg,
+    #07111f,
+    #0a1b30,
+    #07111f);
+
+}
+
+/*==================================================
+LEFT PANEL
+==================================================*/
+
+.login-left{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:50px;
+
+}
+
+.logo{
+
+    width:170px;
+
+    margin-bottom:30px;
+
+    filter:drop-shadow(0 0 25px #19b5ff);
+
+}
+
+.login-left h1{
+
+    font-size:48px;
+
+    letter-spacing:2px;
+
+    font-weight:700;
+
+}
+
+.login-left h2{
+
+    margin-top:10px;
+
+    color:#19b5ff;
+
+    font-size:24px;
+
+    font-weight:500;
+
+}
+
+.login-left p{
+
+    margin-top:20px;
+
+    color:#9db8d5;
+
+    text-align:center;
+
+    line-height:28px;
+
+    font-size:16px;
+
+    max-width:360px;
+
+}
+
+.version{
+
+    margin-top:30px;
+
+    padding:10px 24px;
+
+    border-radius:25px;
+
+    border:1px solid rgba(25,181,255,.30);
+
+    background:rgba(25,181,255,.08);
+
+    color:#19b5ff;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+/*==================================================
+RIGHT PANEL
+==================================================*/
+
+.login-right{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+}
+
+.login-card{
+
+    width:100%;
+
+    max-width:470px;
+
+    background:#11253b;
+
+    border-radius:22px;
+
+    padding:40px;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    box-shadow:
+
+    0 20px 60px rgba(0,0,0,.45),
+
+    0 0 35px rgba(25,181,255,.10);
+
+}
+/*==================================================
+LOGIN CARD
+==================================================*/
+
+.login-card h3{
+
+    font-size:34px;
+
+    font-weight:700;
+
+    margin-bottom:8px;
+
+}
+
+.login-card span{
+
+    display:block;
+
+    color:#8fb3d3;
+
+    font-size:15px;
+
+    margin-bottom:30px;
+
+}
+
+/*==================================================
+FORM
+==================================================*/
+
+.form-group{
+
+    margin-bottom:22px;
+
+}
+
+.form-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#d5e7f7;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+/*==================================================
+INPUT BOX
+==================================================*/
+
+.input-box{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.input-box i:first-child{
+
+    position:absolute;
+
+    left:18px;
+
+    color:#19b5ff;
+
+    font-size:16px;
+
+}
+
+.input-box input{
+
+    width:100%;
+
+    height:56px;
+
+    padding:0 55px 0 50px;
+
+    border-radius:14px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:#13283d;
+
+    color:#ffffff;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:.30s;
+
+}
+
+.input-box input::placeholder{
+
+    color:#7f9bb7;
+
+}
+
+.input-box input:focus{
+
+    border-color:#19b5ff;
+
+    box-shadow:
+
+    0 0 20px rgba(25,181,255,.18);
+
+}
+
+/*==================================================
+ŞİFRE GÖSTER
+==================================================*/
+
+.password-toggle{
+
+    position:absolute;
+
+    right:18px;
+
+    color:#8fb3d3;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    user-select:none;
+
+}
+
+.password-toggle:hover{
+
+    color:#19b5ff;
+
+    transform:scale(1.10);
+
+}
+
+/*==================================================
+LOGIN BUTTON
+==================================================*/
+
+#loginButton{
+
+    width:100%;
+
+    height:56px;
+
+    margin-top:10px;
+
+    border:none;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    color:#ffffff;
+
+    background:linear-gradient(135deg,#19b5ff,#006dff);
+
+    transition:.30s;
+
+}
+
+#loginButton:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+
+    0 10px 25px rgba(25,181,255,.35);
+
+}
+
+#loginButton:active{
+
+    transform:scale(.98);
+
+}
+
+/*==================================================
+LOGIN MESSAGE
+==================================================*/
+
+#loginMessage{
+
+    margin-top:18px;
+
+    min-height:20px;
+
+    text-align:center;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#ff7070;
+
+}
+/*==================================================
+LOGIN STATUS CARDS
+==================================================*/
+
+.login-status{
+
+    margin-top:30px;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:14px;
+
+}
+
+
+.status-card{
+
+    background:#13283d;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    border-radius:14px;
+
+    padding:15px;
+
+    text-align:center;
+
+    transition:.25s;
+
+}
+
+
+.status-card:hover{
+
+    border-color:#19b5ff;
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+    0 10px 25px rgba(25,181,255,.15);
+
+}
+
+
+.status-card small{
+
+    display:block;
+
+    color:#8fb3d3;
+
+    font-size:12px;
+
+    margin-bottom:8px;
+
+}
+
+
+.status-card strong{
+
+    display:block;
+
+    color:#ffffff;
+
+    font-size:16px;
+
+    font-weight:700;
+
+}
+
+
+.online{
+
+    color:#35d07f !important;
+
+}
+
+
+/*==================================================
+COPYRIGHT
+==================================================*/
+
+.copyright{
+
+    margin-top:28px;
+
+    text-align:center;
+
+    color:#6f8cab;
+
+    font-size:12px;
+
+    line-height:20px;
+
+}
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:1100px){
+
+
+    .login-page{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .login-left{
+
+        display:none;
+
+    }
+
+
+    .login-right{
+
+        padding:25px;
+
+    }
+
+
+}
+
+
+@media(max-width:600px){
+
+
+    .login-card{
+
+        padding:30px 25px;
+
+        border-radius:18px;
+
+    }
+
+
+    .login-card h3{
+
+        font-size:28px;
+
+    }
+
+
+    .login-status{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+}
+
+
+/*==================================================
+KÜÇÜK EKRAN YÜKSEKLİK AYARI
+==================================================*/
+
+@media(max-height:750px){
+
+
+    .login-left .logo{
+
+        width:130px;
+
+        margin-bottom:20px;
+
+    }
+
+
+    .login-left h1{
+
+        font-size:38px;
+
+    }
+
+
+    .login-card{
+
+        padding:30px;
+
+    }
+
+
+    .login-status{
+
+        margin-top:20px;
+
+    }
+
+
+}
